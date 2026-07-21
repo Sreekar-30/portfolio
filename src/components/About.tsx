@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
 import { motion } from "framer-motion";
+import Lanyard from "@/components/Lanyard";
 
 export default function About() {
   return (
@@ -33,89 +34,36 @@ export default function About() {
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
               Building scalable APIs, automation systems, and backend architectures that power reliable digital experiences.
             </p>
-            
-            {/* Quick Metrics */}
-            <div className="grid grid-cols-2 gap-6 border-t border-white/10 pt-8">
-  <div>
-    <span className="block text-4xl font-bold text-white font-mono mb-1">
-      1+
-    </span>
-    <span className="text-xs text-gray-500 uppercase tracking-wider">
-      Years Experience
-    </span>
-  </div>
 
-  <div>
-    <span className="block text-4xl font-bold text-white font-mono mb-1">
-      Python
-    </span>
-    <span className="text-xs text-gray-500 uppercase tracking-wider">
-      Backend Engineer
-    </span>
-  </div>
-</div>
-          </motion.div>
-
-          {/* Profile Card / Description */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-7 bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-md relative overflow-hidden group hover:border-white/20 transition-all"
-          >
-            {/* Ambient inner glow */}
-            <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-blue-500/15 transition-all" />
-
-            <div className="relative z-10">
-  <h3 className="text-2xl font-bold text-white mb-6">
+            <div className="rounded-3xl border border-white/10 bg-slate-950/60 p-6">
+  <h3 className="text-white text-xl font-semibold mb-3">
     Professional Profile
   </h3>
 
-  <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-    Python Software Engineer with experience building scalable REST APIs, automation solutions, and backend systems. Skilled in FastAPI, PostgreSQL, Docker, and modern web technologies, with a focus on performance, maintainability, and clean architecture.
+  <p className="text-gray-400 leading-relaxed">
+    Software Engineer with experience building
+    automation solutions, scalable REST APIs,
+    and backend systems using Python, FastAPI,
+    PostgreSQL, and Docker.
   </p>
+</div>
 
-  <div className="grid grid-cols-2 gap-6 mt-10 pt-8 border-t border-white/10">
-    <div>
-      <span className="block text-4xl font-bold text-white font-mono mb-1">
-        1+
-      </span>
-      <span className="text-xs text-gray-500 uppercase tracking-wider">
-        Years Experience
-      </span>
-    </div>
-
-    <div>
-      <span className="block text-4xl font-bold text-white font-mono mb-1">
-        FastAPI
-      </span>
-      <span className="text-xs text-gray-500 uppercase tracking-wider">
-        REST APIs
-      </span>
-    </div>
-
-    <div>
-      <span className="block text-4xl font-bold text-white font-mono mb-1">
-        REST APIs Development
-
-
-      </span>
-      <span className="text-xs text-gray-500 uppercase tracking-wider">
-        Backend Development
-      </span>
-    </div>
-
-    <div>
-      <span className="block text-4xl font-bold text-white font-mono mb-1">
-        PostgreSQL
-      </span>
-      <span className="text-xs text-gray-500 uppercase tracking-wider">
-        Database Design
-      </span>
-    </div>
+            
+          </motion.div>
+<motion.div
+  initial={{ opacity: 0, x: 40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="lg:col-span-7 flex justify-end"
+>
+  <div className="relative w-full max-w-[520px] h-[650px]">
+    <Lanyard frontImage="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" />
   </div>
-</div>          </motion.div>
+</motion.div>
+          
+
+          
         </div>
       </div>
     </section>

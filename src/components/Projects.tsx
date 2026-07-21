@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 // Project Data with Media & Layout Configuration
-const projects = [
+const projects = [  
   {
     id: "geo-fenced-attendance",
     title: "Geo-Fenced Attendance & Access Control",

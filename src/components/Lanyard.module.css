@@ -1,0 +1,16 @@
+.lanyardWrapper {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transform-origin: center;
+}
+
+.lanyardCanvas {
+  width: 100%;
+  height: 100%;
+}
